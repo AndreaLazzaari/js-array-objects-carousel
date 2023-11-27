@@ -1,1 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+div.container{
+    width: 85%;
+    height: 430px;
+    background-color: yellow;
+    border-radius: .7rem;
+    position: absolute;
+}
+
+div.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottoni{
+    position: absolute;
+    display: inline-block;
+    border-radius: 1rem;
+    background-color: aqua;
+    font-size: 2rem;
+    border: none;
+    color: magenta;
+    height: 50px;
+    width: 50px;
+}
+
+.bottone-avanti{
+   
+    right: 75px;
+    top: 50%;
+}
+.bottone-indietro{
+   
+    left: 75px;
+    top: 50%;
+}
