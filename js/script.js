@@ -37,11 +37,30 @@ const images = [
 
 const divEl = document.querySelector('div.container');
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Funzioni
+
+
+
+function addImg(){
 for (let i = 0; i < images.length; i++) {
     const imgElement = images[i];
 
     // divEl.appendChild(imgElement)
-    divEl.innerHTML = 
+    return divEl.innerHTML = 
     `
     <img src="${imgElement.image}" alt=""> 
     <h3>${imgElement.title}</h3> 
@@ -49,4 +68,4 @@ for (let i = 0; i < images.length; i++) {
 
     `
     
-}
+}}
