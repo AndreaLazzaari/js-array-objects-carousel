@@ -30,15 +30,15 @@ div.container img{
 }
 
 .bottoni{
-    position: absolute;
+    position: relative;
     display: inline-block;
     border-radius: 1rem;
     background-color: aqua;
-    font-size: 2rem;
     border: none;
     color: magenta;
     height: 50px;
     width: 50px;
+    transform: translateY(-50%)
 }
 
 .bottone-avanti{
@@ -50,4 +50,17 @@ div.container img{
    
     left: 75px;
     top: 50%;
+}
+
+h3{
+    position: relative;
+    left: 4px;
+    bottom: 15%;
+    
+}
+
+p{
+    position: relative;
+    left: 4px;
+    bottom: 15%;
 }

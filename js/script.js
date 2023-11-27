@@ -21,3 +21,32 @@ const images = [
         text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
     }
 ];
+
+
+// Milestone 0:
+// Come nel primo carosello realizzato, focalizziamoci prima sulla creazione del markup statico: costruiamo il container 
+// e inseriamo l'immagine grande in modo da poter stilare lo slider.
+// Milestone 1:
+// Ora rimuoviamo i contenuti statici e usiamo l’array di oggetti letterali per popolare dinamicamente il carosello.
+// Al click dell'utente sulle frecce verso l'alto o verso il basso, 
+// l'immagine attiva diventerà visibile e dovremo aggiungervi titolo e testo.
+// Milestone 2: Aggiungere il ciclo infinito del carosello.
+// Ovvero se la miniatura attiva è la prima e l'utente clicca la freccia verso l'alto, 
+// la miniatura che deve attivarsi sarà l'ultima e viceversa per l'ultima miniatura se l'utente clicca la freccia verso il basso.
+
+
+const divEl = document.querySelector('div.container');
+
+for (let i = 0; i < images.length; i++) {
+    const imgElement = images[i];
+
+    // divEl.appendChild(imgElement)
+    divEl.innerHTML = 
+    `
+    <img src="${imgElement.image}" alt=""> 
+    <h3>${imgElement.title}</h3> 
+    <p>${imgElement.text}</p>
+
+    `
+    
+}
